@@ -8,3 +8,5 @@ A Framework for Defining Differentially-Private Computations
   2.proof of privacy
   3. modularity, transparency, flexibility
   
+Algorithm 1:
+problem： AHPpartition, privacy budget,
