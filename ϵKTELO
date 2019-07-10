@@ -1,0 +1,10 @@
+A Framework for Defining Differentially-Private Computations
+3 important chanllenges:
+  1. difficulty of designing utility-optimal algorithms
+  2. diversity， hard to used in different mission.
+  3. incorrectly implemented algorithms
+5 contributions:
+  1.operator set
+  2.proof of privacy
+  3. modularity, transparency, flexibility
+  
