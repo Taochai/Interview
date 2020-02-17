@@ -71,3 +71,33 @@ A platform is the hardware or software environment in which a piece of software 
 10) What gives Java its 'write once and run anywhere' nature?
 The bytecode. Java compiler converts the Java programs into the class file (Byte Code) which is the intermediate language between source code and machine code. This bytecode is not platform specific and can be executed on any computer.
 
+11) What is classloader?
+Classloader is a subsystem of JVM which is used to load class files. Whenever we run the java program, it is loaded first by the classloader. There are three built-in classloaders in Java.
+
+Bootstrap ClassLoader: This is the first classloader which is the superclass of Extension classloader. It loads the rt.jar file which contains all class files of Java Standard Edition like java.lang package classes, java.net package classes, java.util package classes, java.io package classes, java.sql package classes, etc.
+
+Extension ClassLoader: This is the child classloader of Bootstrap and parent classloader of System classloader. It loads the jar files located inside $JAVA_HOME/jre/lib/ext directory.
+
+System/Application ClassLoader: This is the child classloader of Extension classloader. It loads the class files from the classpath. By default, the classpath is set to the current directory. You can change the classpath using "-cp" or "-classpath" switch. It is also known as Application classloader.
+
+14) If I don't provide any arguments on the command line, then what will the value stored in the String array passed into the main() method, empty or NULL?
+It is empty, but not null.
+
+16) What is the default value of the local variables?
+The local variables are not initialized to any default value, neither primitives nor object references.
+成员变量和局部变量的区别
+       成员变量：
+
+          ①成员变量定义在类中，在整个类中都可以被访问。
+
+          ②成员变量随着对象的建立而建立，随着对象的消失而消失，存在于对象所在的堆内存中。
+
+          ③成员变量有默认初始化值。
+
+      局部变量：
+
+          ①局部变量只定义在局部范围内，如：函数内，语句内等，只在所属的区域有效。
+
+          ②局部变量存在于栈内存中，作用的范围结束，变量空间会自动释放。
+
+          ③局部变量没有默认初始化值
